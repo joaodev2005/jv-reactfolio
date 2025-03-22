@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; 
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,8 @@ const Navbar = () => {
                 {"</"}JOAO{"/>"}
                 </h2>
 
-                {/* Menu Desktop */}
                 <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
-                    {["About", "Skills", "Projects", "Contact"].map((item) => (
+                    {["Skills", "About", "Projects", "Contact"].map((item) => (
                         <li key={item} className="group">
                             <button aria-label={`Go to ${item} section`}>
                                 {item}
@@ -35,6 +35,7 @@ const Navbar = () => {
                     <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                     <span className="relative text-black group-hover:text-white flex items-center gap-x-3">
                         RESUME
+                        <MdOutlineFileDownload size={20} className="text-black group-hover:text-white" />
                     </span>
                 </a>
 
