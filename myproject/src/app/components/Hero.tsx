@@ -10,7 +10,6 @@ const Hero = () => {
             <h2>Hello, I am João Victor</h2>
             <h2>
               <span className="font-extrabold">Full Stack</span>
-              {/* <span className="font-extrabold font-sora text-white"> Developer</span> */}
               <span className="text-border"> Developer</span>
             </h2>
             <h2>
@@ -32,6 +31,9 @@ const Hero = () => {
               <FaGithub size={24} />
             </a>
           </div>
+        </div>
+        <div className='lg:w-[55%] w-full'>
+          <h2>image</h2>
         </div>
       </div>
     </div>
